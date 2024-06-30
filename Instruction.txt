@@ -1,0 +1,51 @@
+01) git clone https://github.com/zhadraoui/rag-llama3.git
+
+02) cd roq     
+
+03) conda create -n phidata python=3.11 -y
+
+conda init
+
+conda init bash
+
+04) conda activate phidata
+
+05) pip install -r requirements.txt
+
+## il faut utilise gitbash
+
+06) export GROQ_API_KEY=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
+
+07) docker -v
+
+docker run -d \
+  -e POSTGRES_DB=ai \
+  -e POSTGRES_USER=ai \
+  -e POSTGRES_PASSWORD=ai \
+  -e PGDATA=/var/lib/postgresql/data/pgdata \
+  -v pgvolume:/var/lib/postgresql/data \
+  -p 5532:5432 \
+  --name pgvector \
+  phidata/pgvector:16
+
+docker ps
+
+
+
+08) ollama run nomic-embed-text
+
+
+09) cd D:\Jupyter\phidata\cookbook\llms\groq\rag
+
+10) streamlit run app.py
+
+
+
+
+
+
+
+
+
+
+pip install msgpack pandas requests cryptography yarl Jinja2 Babel sqlalchemy filelock fsspec packaging tqdm appdirs bcrypt ipython matplotlib plotly pytest urllib3[socks] smart-open sympy pillow regex sortedcontainers typer
